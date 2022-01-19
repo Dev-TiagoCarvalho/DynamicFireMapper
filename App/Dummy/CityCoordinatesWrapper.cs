@@ -1,0 +1,60 @@
+﻿using System.Collections.Generic;
+using App.Data;
+using FireMapper;
+using FireMapper.Wrapper;
+
+namespace App.Dummy
+{
+    public class CityCoordinatesWrapper : IPropertyWrapper
+    {
+        private readonly IDataMapper _mapper;
+
+        public CityCoordinatesWrapper(IDataMapper mapper)
+        {
+            _mapper = mapper;
+        }
+
+        public string Name()
+        {
+            return "Coordinates";
+        }
+
+        public bool IsKey()
+        {
+            return false;
+        }
+
+        public object Value(object obj)
+        {
+            City city = (City) obj;
+            return city.Coordinates;
+        }
+
+        public object GetValue(Dictionary<string, object> dictionary)
+        {
+            if(!dictionary.ContainsKey("Coordinates")) return null;
+            return _mapper.GetById(dictionary["Coordinates"]);
+        }
+
+        public object AddValue(object obj)
+        {
+            City city = (City) obj;
+            _mapper.Add(city.Coordinates);
+            return city.Coordinates.Token;
+        }
+
+        public object UpdateValue(object obj)
+        {
+            City city = (City) obj;
+            _mapper.Update(city.Coordinates);
+            return city.Coordinates.Token;
+        }
+
+        public void DeleteValue(object keyValue, string collection)
+        {
+            if (keyValue is null) return;
+            Coordinates value = (Coordinates) keyValue;
+            if(collection.Equals(_mapper.Collection)) _mapper.Delete(value.Token);
+        }
+    }
+}

@@ -1,0 +1,17 @@
+Cities;document1;Name:Lisboa;Coordinates:Lisboa;Country:Portugal;Population:10000000;Area:59,7;TimeZone:GMT+1;Description:Some description of Lisbon.;
+Cities;document2;Name:Porto;Coordinates:Porto;Country:Portugal;Population:20000000;Area:90,7999;TimeZone:GMT+1;Description:Some description of Porto.;
+Cities;document3;Name:Torres Vedras;Coordinates:Torres Vedras;Country:Portugal;Population:1450;Area:25,89;TimeZone:GMT+1;Description:Top City.;
+VIPs;document1;Name:Elon Musk;City:Lisboa;Job:unemployed;Birthday:01/01/2000;Description:some description of Elon.;
+VIPs;document2;Name:Vladimir Putin;City:Porto;Job:President;Birthday:12/12/1900;Description:some description of Vladimir Putin.;
+PointsOfInterest;document1;Name:Capa Negra;City:Porto;Type:Restaurant;Evaluation:8;Description:some description of Capa Negra.;
+PointsOfInterest;document2;Name:Torre de Belém;City:Lisboa;Type:Monument;Evaluation:7;Description:some description of Torre de Belém.;
+PointsOfInterest;document3;Name:Padrão dos Descobrimentos;City:Lisboa;Type:Monument;Evaluation:9;Description:some description of Padrão dos Descobrimentos.;
+Cities;document4;Token:Lisboa;X:57,89;Y:-45,789;
+Cities;document5;Token:Torres Vedras;X:01,23;Y:-99,23;
+Cities;document6;Token:Porto;X:88,3;Y:-9,23;
+//coordinates;document6;Token:Lisboa;X:56,89;Y:-47,789;
+//coordinates;document7;Token:Torres Vedras;X:01,23;Y:-99,23;
+Students;document7;Name:Tiago;Classroom:1;Number:46086;
+Students;document8;Name:Manel;Classroom:2;Number:46087;
+Students;document9;Id:1;Something:None;
+Students;document0;Id:2;Something:None None;
